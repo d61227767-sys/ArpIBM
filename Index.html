@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Product Showcase with Search</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Image Slider -->
+  <section class="slider">
+    <div class="slides">
+      <img src="abc.jpg" class="slide" alt="Slide 1">
+      <img src="bac.jpg" class="slide" alt="Slide 2">
+      <img src="ddc.jpg" class="slide" alt="Slide 3">
+    </div>
+    <!-- Navigation Arrows -->
+    <button class="prev" onclick="moveSlide(-1)">❮</button>
+    <button class="next" onclick="moveSlide(1)">❯</button>
+  </section>
+  <header>
+    <h1>Product Showcase</h1>
+    <input type="text" id="searchBar" placeholder="Search products..." onkeyup="searchProducts()" />
+  </header>
+
+  <main class="product-grid" id="productGrid">
+    <div class="product-card" data-name="Wireless Headphones">
+      <img src="cdc.jpg" alt="Product Image">
+      <h2>Wireless Headphones</h2>
+      <p class="price">$59.99</p>
+      <button onclick="addToCart('Wireless Headphones')">Add to Cart</button>
+    </div>
+
+    <div class="product-card" data-name="Smart Watch">
+      <img src="iujii.jpg" alt="Product Image">
+      <h2>Smart Watch</h2>
+      <p class="price">$99.99</p>
+      <button onclick="addToCart('Smart Watch')">Add to Cart</button>
+    </div>
+
+    <div class="product-card" data-name="Bluetooth Speaker">
+      <img src="eignj.jpg" alt="Product Image">
+      <h2>Bluetooth Speaker</h2>
+      <p class="price">$29.99</p>
+      <button onclick="addToCart('Bluetooth Speaker')">Add to Cart</button>
+    </div>
+
+    <div class="product-card" data-name="Noise Cancelling Earbuds">
+      <img src="njjdng.jpg" alt="Product Image">
+      <h2>Noise Cancelling Earbuds</h2>
+      <p class="price">$79.99</p>
+      <button onclick="addToCart('Noise Cancelling Earbuds')">Add to Cart</button>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+        </html>
